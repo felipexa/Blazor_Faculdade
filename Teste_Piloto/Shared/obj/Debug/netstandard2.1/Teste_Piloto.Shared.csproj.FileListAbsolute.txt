@@ -1,0 +1,81 @@
+C:\Users\dionn\source\repos\Teste_Piloto\Teste_Piloto\Shared\bin\Debug\netstandard2.1\Teste_Piloto.Shared.deps.json
+C:\Users\dionn\source\repos\Teste_Piloto\Teste_Piloto\Shared\bin\Debug\netstandard2.1\Teste_Piloto.Shared.dll
+C:\Users\dionn\source\repos\Teste_Piloto\Teste_Piloto\Shared\bin\Debug\netstandard2.1\Teste_Piloto.Shared.pdb
+C:\Users\dionn\source\repos\Teste_Piloto\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.csprojAssemblyReference.cache
+C:\Users\dionn\source\repos\Teste_Piloto\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.AssemblyInfoInputs.cache
+C:\Users\dionn\source\repos\Teste_Piloto\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.AssemblyInfo.cs
+C:\Users\dionn\source\repos\Teste_Piloto\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.dll
+C:\Users\dionn\source\repos\Teste_Piloto\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.pdb
+C:\Users\dionn\source\repos\Teste_Piloto\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.csproj.CoreCompileInputs.cache
+C:\Users\felii\Desktop\BlazorFUP\TrabalhoBlazorFUP\Teste_Piloto\Shared\bin\Debug\netstandard2.1\Teste_Piloto.Shared.deps.json
+C:\Users\felii\Desktop\BlazorFUP\TrabalhoBlazorFUP\Teste_Piloto\Shared\bin\Debug\netstandard2.1\Teste_Piloto.Shared.dll
+C:\Users\felii\Desktop\BlazorFUP\TrabalhoBlazorFUP\Teste_Piloto\Shared\bin\Debug\netstandard2.1\Teste_Piloto.Shared.pdb
+C:\Users\felii\Desktop\BlazorFUP\TrabalhoBlazorFUP\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.csprojAssemblyReference.cache
+C:\Users\felii\Desktop\BlazorFUP\TrabalhoBlazorFUP\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.csproj.CoreCompileInputs.cache
+C:\Users\felii\Desktop\BlazorFUP\TrabalhoBlazorFUP\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.AssemblyInfoInputs.cache
+C:\Users\felii\Desktop\BlazorFUP\TrabalhoBlazorFUP\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.AssemblyInfo.cs
+C:\Users\felii\Desktop\BlazorFUP\TrabalhoBlazorFUP\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.dll
+C:\Users\felii\Desktop\BlazorFUP\TrabalhoBlazorFUP\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.pdb
+C:\Users\felii\Desktop\teste\BlazorFUP\Teste_Piloto\Shared\bin\Debug\netstandard2.1\Teste_Piloto.Shared.deps.json
+C:\Users\felii\Desktop\teste\BlazorFUP\Teste_Piloto\Shared\bin\Debug\netstandard2.1\Teste_Piloto.Shared.dll
+C:\Users\felii\Desktop\teste\BlazorFUP\Teste_Piloto\Shared\bin\Debug\netstandard2.1\Teste_Piloto.Shared.pdb
+C:\Users\felii\Desktop\teste\BlazorFUP\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.csprojAssemblyReference.cache
+C:\Users\felii\Desktop\teste\BlazorFUP\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.csproj.CoreCompileInputs.cache
+C:\Users\felii\Desktop\teste\BlazorFUP\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.AssemblyInfoInputs.cache
+C:\Users\felii\Desktop\teste\BlazorFUP\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.AssemblyInfo.cs
+C:\Users\felii\Desktop\teste\BlazorFUP\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.dll
+C:\Users\felii\Desktop\teste\BlazorFUP\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.pdb
+C:\Users\dionn\source\repos\Blazor-masterHoje\Teste_Piloto\Shared\bin\Debug\netstandard2.1\Teste_Piloto.Shared.deps.json
+C:\Users\dionn\source\repos\Blazor-masterHoje\Teste_Piloto\Shared\bin\Debug\netstandard2.1\Teste_Piloto.Shared.dll
+C:\Users\dionn\source\repos\Blazor-masterHoje\Teste_Piloto\Shared\bin\Debug\netstandard2.1\Teste_Piloto.Shared.pdb
+C:\Users\dionn\source\repos\Blazor-masterHoje\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.csprojAssemblyReference.cache
+C:\Users\dionn\source\repos\Blazor-masterHoje\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.AssemblyInfoInputs.cache
+C:\Users\dionn\source\repos\Blazor-masterHoje\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.AssemblyInfo.cs
+C:\Users\dionn\source\repos\Blazor-masterHoje\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.csproj.CoreCompileInputs.cache
+C:\Users\dionn\source\repos\Blazor-masterHoje\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.dll
+C:\Users\dionn\source\repos\Blazor-masterHoje\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.pdb
+C:\Users\dionn\source\repos\Trabalho Arrumar Financeiro\Blazor-masterHoje\Teste_Piloto\Shared\bin\Debug\netstandard2.1\Teste_Piloto.Shared.deps.json
+C:\Users\dionn\source\repos\Trabalho Arrumar Financeiro\Blazor-masterHoje\Teste_Piloto\Shared\bin\Debug\netstandard2.1\Teste_Piloto.Shared.dll
+C:\Users\dionn\source\repos\Trabalho Arrumar Financeiro\Blazor-masterHoje\Teste_Piloto\Shared\bin\Debug\netstandard2.1\Teste_Piloto.Shared.pdb
+C:\Users\dionn\source\repos\Trabalho Arrumar Financeiro\Blazor-masterHoje\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.csprojAssemblyReference.cache
+C:\Users\dionn\source\repos\Trabalho Arrumar Financeiro\Blazor-masterHoje\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.AssemblyInfoInputs.cache
+C:\Users\dionn\source\repos\Trabalho Arrumar Financeiro\Blazor-masterHoje\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.AssemblyInfo.cs
+C:\Users\dionn\source\repos\Trabalho Arrumar Financeiro\Blazor-masterHoje\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.csproj.CoreCompileInputs.cache
+C:\Users\dionn\source\repos\Trabalho Arrumar Financeiro\Blazor-masterHoje\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.dll
+C:\Users\dionn\source\repos\Trabalho Arrumar Financeiro\Blazor-masterHoje\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.pdb
+C:\Users\dionn\source\repos\Trabalho Arrumar Financeiro 14,06\Blazor-masterHoje\Teste_Piloto\Shared\bin\Debug\netstandard2.1\Teste_Piloto.Shared.deps.json
+C:\Users\dionn\source\repos\Trabalho Arrumar Financeiro 14,06\Blazor-masterHoje\Teste_Piloto\Shared\bin\Debug\netstandard2.1\Teste_Piloto.Shared.dll
+C:\Users\dionn\source\repos\Trabalho Arrumar Financeiro 14,06\Blazor-masterHoje\Teste_Piloto\Shared\bin\Debug\netstandard2.1\Teste_Piloto.Shared.pdb
+C:\Users\dionn\source\repos\Trabalho Arrumar Financeiro 14,06\Blazor-masterHoje\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.csprojAssemblyReference.cache
+C:\Users\dionn\source\repos\Trabalho Arrumar Financeiro 14,06\Blazor-masterHoje\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.AssemblyInfoInputs.cache
+C:\Users\dionn\source\repos\Trabalho Arrumar Financeiro 14,06\Blazor-masterHoje\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.AssemblyInfo.cs
+C:\Users\dionn\source\repos\Trabalho Arrumar Financeiro 14,06\Blazor-masterHoje\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.csproj.CoreCompileInputs.cache
+C:\Users\dionn\source\repos\Trabalho Arrumar Financeiro 14,06\Blazor-masterHoje\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.dll
+C:\Users\dionn\source\repos\Trabalho Arrumar Financeiro 14,06\Blazor-masterHoje\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.pdb
+C:\Users\felii\Desktop\Blazor FUP\FUP-BLAZOR-16-06\Teste_Piloto\Shared\bin\Debug\netstandard2.1\Teste_Piloto.Shared.deps.json
+C:\Users\felii\Desktop\Blazor FUP\FUP-BLAZOR-16-06\Teste_Piloto\Shared\bin\Debug\netstandard2.1\Teste_Piloto.Shared.dll
+C:\Users\felii\Desktop\Blazor FUP\FUP-BLAZOR-16-06\Teste_Piloto\Shared\bin\Debug\netstandard2.1\Teste_Piloto.Shared.pdb
+C:\Users\felii\Desktop\Blazor FUP\FUP-BLAZOR-16-06\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.csprojAssemblyReference.cache
+C:\Users\felii\Desktop\Blazor FUP\FUP-BLAZOR-16-06\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.csproj.CoreCompileInputs.cache
+C:\Users\felii\Desktop\Blazor FUP\FUP-BLAZOR-16-06\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.AssemblyInfoInputs.cache
+C:\Users\felii\Desktop\Blazor FUP\FUP-BLAZOR-16-06\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.AssemblyInfo.cs
+C:\Users\felii\Desktop\Blazor FUP\FUP-BLAZOR-16-06\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.dll
+C:\Users\felii\Desktop\Blazor FUP\FUP-BLAZOR-16-06\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.pdb
+C:\Users\dionn\Downloads\Versao com front\Teste_Piloto\Shared\bin\Debug\netstandard2.1\Teste_Piloto.Shared.deps.json
+C:\Users\dionn\Downloads\Versao com front\Teste_Piloto\Shared\bin\Debug\netstandard2.1\Teste_Piloto.Shared.dll
+C:\Users\dionn\Downloads\Versao com front\Teste_Piloto\Shared\bin\Debug\netstandard2.1\Teste_Piloto.Shared.pdb
+C:\Users\dionn\Downloads\Versao com front\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.csprojAssemblyReference.cache
+C:\Users\dionn\Downloads\Versao com front\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.AssemblyInfoInputs.cache
+C:\Users\dionn\Downloads\Versao com front\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.AssemblyInfo.cs
+C:\Users\dionn\Downloads\Versao com front\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.csproj.CoreCompileInputs.cache
+C:\Users\dionn\Downloads\Versao com front\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.dll
+C:\Users\dionn\Downloads\Versao com front\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.pdb
+C:\Users\felii\Desktop\BlazorFUPFROnt\BlazorComFrontFUP\Teste_Piloto\Shared\bin\Debug\netstandard2.1\Teste_Piloto.Shared.deps.json
+C:\Users\felii\Desktop\BlazorFUPFROnt\BlazorComFrontFUP\Teste_Piloto\Shared\bin\Debug\netstandard2.1\Teste_Piloto.Shared.dll
+C:\Users\felii\Desktop\BlazorFUPFROnt\BlazorComFrontFUP\Teste_Piloto\Shared\bin\Debug\netstandard2.1\Teste_Piloto.Shared.pdb
+C:\Users\felii\Desktop\BlazorFUPFROnt\BlazorComFrontFUP\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.csprojAssemblyReference.cache
+C:\Users\felii\Desktop\BlazorFUPFROnt\BlazorComFrontFUP\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.csproj.CoreCompileInputs.cache
+C:\Users\felii\Desktop\BlazorFUPFROnt\BlazorComFrontFUP\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.AssemblyInfoInputs.cache
+C:\Users\felii\Desktop\BlazorFUPFROnt\BlazorComFrontFUP\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.AssemblyInfo.cs
+C:\Users\felii\Desktop\BlazorFUPFROnt\BlazorComFrontFUP\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.dll
+C:\Users\felii\Desktop\BlazorFUPFROnt\BlazorComFrontFUP\Teste_Piloto\Shared\obj\Debug\netstandard2.1\Teste_Piloto.Shared.pdb

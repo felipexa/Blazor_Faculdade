@@ -1,0 +1,111 @@
+﻿@inject HttpClient http
+<br>
+<EditForm Model="@Funcionario" OnValidSubmit="@OnValidSubmit">
+    <DataAnnotationsValidator />
+    <div class="row">
+        <div class="form-group col-md-12 roboto">
+            <label>Nome</label>
+            <InputText @bind-Value="@Funcionario.NomeFuncionario" class="form-control" required></InputText>
+            <ValidationMessage For="@(() =>Funcionario.NomeFuncionario)"></ValidationMessage>
+        </div>
+        <div class="form-group col-md-6 roboto">
+            <label>RG</label>
+            <InputText @bind-Value="@Funcionario.Rg" class="form-control" required></InputText>
+            <ValidationMessage For="@(() =>Funcionario.Rg)"></ValidationMessage>
+
+        </div>
+        <div class="form-group col-md-6 roboto">
+            <label>CPF</label>
+            <InputText @bind-Value="@Funcionario.Cpf" class="form-control" required></InputText>
+            <ValidationMessage For="@(() =>Funcionario.Cpf)"></ValidationMessage>
+
+        </div>
+        <div class="form-group col-md-6 roboto">
+            <label>Data Nascimento</label>
+            <InputDate @bind-Value="@Funcionario.Datanascimento" class="form-control" required></InputDate>
+            <ValidationMessage For="@(() =>Funcionario.Datanascimento)"></ValidationMessage>
+
+        </div>
+        <div class="form-group col-md-6 roboto">
+            <label>Data Contratação</label>
+            <InputDate @bind-Value="@Funcionario.DataContratacao" class="form-control" required></InputDate>
+            <ValidationMessage For="@(() =>Funcionario.DataContratacao)"></ValidationMessage>
+
+        </div>
+        <div class="form-group col-md-6 roboto">
+            <label>Data Demissão</label>
+            <InputDate @bind-Value="@Funcionario.DataDemissao" class="form-control"></InputDate>
+            <ValidationMessage For="@(() =>Funcionario.DataDemissao)"></ValidationMessage>
+
+        </div>
+        <div class="form-group col-md-6 roboto">
+            <label>Gênero</label>
+            <InputText @bind-Value="@Funcionario.Genero" class="form-control" required></InputText>
+            <ValidationMessage For="@(() =>Funcionario.Genero)"></ValidationMessage>
+
+        </div>
+        <div class="form-group col-md-6 roboto">
+            <label>Salário</label>
+            <InputNumber @bind-Value="@Funcionario.SalarioFuncionario" class="form-control" required></InputNumber>
+            <ValidationMessage For="@(() =>Funcionario.SalarioFuncionario)"></ValidationMessage>
+
+        </div>
+        <div class="form-group col-md-6 roboto">
+            <label>Email</label>
+            <InputText @bind-Value="@Funcionario.Email" class="form-control" required></InputText>
+            <ValidationMessage For="@(() =>Funcionario.Email)"></ValidationMessage>
+
+        </div>
+        <div class="form-group col-md-6 roboto">
+            <label>Telefone</label>
+            <InputText @bind-Value="@Funcionario.Telefone" class="form-control" required></InputText>
+            <ValidationMessage For="@(() =>Funcionario.Telefone)"></ValidationMessage>
+
+        </div>
+        <div class="form-group col-md-6 roboto">
+            <label>Nome Chefe</label>
+            <InputSelect @bind-Value="@Funcionario.NomeChefe" class="form-control" required>
+
+                @if (chefias != null)
+                {
+<option value="">Select...</option>
+
+                        @foreach (var chefia in chefias)
+                        {
+<option value="@chefia.NomeChefia">@chefia.NomeChefia</option>}}
+            </InputSelect>
+            @*<InputSelect @bind-Value="@Funcionario.Curso" class="form-control">
+                    @if (chefias != null)
+                    {
+                    <option value="">Selecione um curso</option>
+                        @foreach (var curso in chefias)
+                        {
+                            <option value="@curso">@curso.NomeCurso</option>
+                        }
+                    }
+                </InputSelect>*@
+        </div>
+        <div class="col-md-12 text-center">
+            <button type="submit" class="btn-add w-50 rounded-pill" >@ButtonText</button>
+        </div>
+
+    </div>
+</EditForm>
+
+
+@code
+{
+    public List<Chefia> chefias { get; set; }
+    [Parameter] public Funcionario Funcionario { get; set; }
+    [Parameter] public string ButtonText { get; set; }
+    [Parameter] public EventCallback OnValidSubmit { get; set; }
+    protected override async Task OnInitializedAsync()
+
+    {
+        await LoadChefias();
+    }
+    async Task LoadChefias()
+    {
+        chefias = await http.GetFromJsonAsync<List<Chefia>>("api/chefias");
+    }
+}

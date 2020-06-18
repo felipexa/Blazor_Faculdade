@@ -1,0 +1,23 @@
+﻿<br>
+<EditForm Model="@financeiro" OnInvalidSubmit="@OnValidSubmit">
+    <div class="row">
+    <div class="form-group col-md-6 roboto">
+        <label>Entrada</label>
+        <InputNumber @bind-Value="@financeiro.Entrada" class="form-control"></InputNumber>
+    </div>
+    <div class="form-group col-md-6 roboto">
+        <label>Saída</label>
+        <InputNumber @bind-Value="@financeiro.Saida" class="form-control"></InputNumber>
+    </div>
+    <div class="col-md-12 text-center">
+        <button type="submit" class="btn-add w-50 rounded-pill" @onclick="OnValidSubmit">@ButtonText</button>
+    </div>
+    </div>
+</EditForm>
+
+
+@code
+{ [Parameter] public Financeiro financeiro { get; set; }
+  [Parameter] public string ButtonText { get; set; }
+  [Parameter] public EventCallback OnValidSubmit { get; set; } 
+}

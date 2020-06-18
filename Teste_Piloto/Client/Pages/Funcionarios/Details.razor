@@ -1,0 +1,22 @@
+﻿@page "/funcionarios/details/{id:int}"
+@inject HttpClient http
+@inject NavigationManager navigation
+
+
+<h3>Detalhes</h3>
+<PageDetails Funcionario="funcionario" ButtonText="Voltar" OnValidSubmit="@DetalhesFuncionario"></PageDetails>
+
+@code {
+    private Funcionario funcionario = new Funcionario();
+    [Parameter] public int id { get; set; }
+    protected override async Task OnParametersSetAsync() // é chamado qd o roteamento passar o valor para a propriedade
+    {
+        funcionario = await http.GetFromJsonAsync<Funcionario>($"api/funcionarios/{id}");
+    }
+
+    async Task DetalhesFuncionario()
+    {
+        await http.PutAsJsonAsync("api/funcionarios", funcionario);
+        navigation.NavigateTo("funcionarios");
+    }
+}

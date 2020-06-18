@@ -1,0 +1,75 @@
+﻿@page "/Cursos"
+@using Faculdade_FUP_Project.Server.Models
+@inject HttpClient http
+
+@if (cursos == null)
+{
+    <text>Carregando!!!</text>
+}
+else if (cursos.Count == 0)
+{
+
+    <h3 class="text-uppercase pb-3">Cursos cadastrados - 0  </h3>
+    <div>
+        <a href="cursos/criar" value="Criar">
+            <button class="btn-criar roboto rounded-pill border-0 my-5">Criar</button>
+        </a>
+    </div>
+}
+
+else
+{
+    <div>
+        <a href="cursos/criar" value="Criar">
+            <button class="btn-criar roboto rounded-pill border-0 my-5">Criar</button>
+        </a>
+    </div>
+
+    <table class="table roboto text-uppercase font-tabela">
+        <thead>
+            <tr>
+
+                <th>NomeCurso</th>
+                <th>Professor</th>
+                <th>ValorCurso</th>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var curso in cursos)
+            {
+                <tr class="table roboto text-uppercase font-tabela">
+
+                    <td>@curso.NomeCurso</td>
+                    <td>@curso.ProfessorCurso</td>
+                    <td>@curso.ValorCurso</td>
+                    <td>
+                        <a class="button-geral" href="cursos/edit/@curso.Id_Curso">Editar</a>
+                        <a class="button-geral" href="cursos/details/@curso.Id_Curso">Detalhes</a>
+                        <a class="button-geral" style="cursor:pointer;" btn btn-danger @onclick="@(() => ExcluirCurso(curso.Id_Curso))"> Delete </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+}
+
+
+
+@code {
+    public List<Curso> cursos;
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadCursos();
+    }
+    async Task LoadCursos()
+    {
+        cursos = await http.GetFromJsonAsync<List<Curso>>("api/cursos");
+    }
+    async Task ExcluirCurso(int id)
+    {
+        await http.DeleteAsync($"api/cursos/{id}");
+        await LoadCursos();
+    }
+}

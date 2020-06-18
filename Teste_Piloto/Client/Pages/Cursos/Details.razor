@@ -1,0 +1,22 @@
+﻿@page "/cursos/details/{id:int}"
+@inject HttpClient http
+@inject NavigationManager navigation
+
+
+<h3>Detalhes</h3>
+<PageDetails Curso="curso" ButtonText="Voltar" OnValidSubmit="@DetalhesCurso"></PageDetails>
+
+@code {
+    private Curso curso = new Curso();
+    [Parameter] public int id { get; set; }
+    protected override async Task OnParametersSetAsync() // é chamado qd o roteamento passar o valor para a propriedade
+    {
+        curso = await http.GetFromJsonAsync<Curso>($"api/cursos/{id}");
+    }
+
+    async Task DetalhesCurso()
+    {
+        await http.PutAsJsonAsync("api/cursos", curso);
+        navigation.NavigateTo("cursos");
+    }
+}

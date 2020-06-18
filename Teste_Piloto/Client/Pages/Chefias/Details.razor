@@ -1,0 +1,22 @@
+﻿@page "/chefias/details/{id:int}"
+@inject HttpClient http
+@inject NavigationManager navigation
+
+
+<h3>Detalhes</h3>
+<PageDetails Chefia="Chefia" ButtonText="Voltar" OnValidSubmit="@DetalhesChefias"></PageDetails>
+
+@code {
+    private Chefia Chefia = new Chefia();
+    [Parameter] public int id { get; set; }
+    protected override async Task OnParametersSetAsync() // é chamado qd o roteamento passar o valor para a propriedade
+    {
+        Chefia = await http.GetFromJsonAsync<Chefia>($"api/chefias/{id}");
+    }
+
+    async Task DetalhesChefias()
+    {
+        await http.PutAsJsonAsync("api/chefias", Chefia);
+        navigation.NavigateTo("chefias");
+    }
+}

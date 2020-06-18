@@ -1,0 +1,23 @@
+﻿@page "/chefias/edit/{id:int}"
+@inject HttpClient http
+@inject NavigationManager navigation
+
+<h3>Editar</h3>
+<PageChefia Chefia="chefia" ButtonText="Atualizar" OnValidSubmit="@EditarChefia"></PageChefia>
+
+
+@code { 
+
+    private Chefia chefia = new Chefia();
+            [Parameter] public int id { get; set; }
+            protected override async Task OnParametersSetAsync() // é chamado qd o roteamento passar o valor para a propriedade
+            {
+                chefia = await http.GetFromJsonAsync<Chefia>($"api/chefias/{id}");
+            }
+
+            async Task EditarChefia()
+            {
+                await http.PutAsJsonAsync("api/chefias", chefia);
+                navigation.NavigateTo("chefias");
+            } 
+    }

@@ -1,0 +1,33 @@
+﻿@page "/chefias/criar"
+@inject HttpClient http
+@inject NavigationManager navigation
+
+<h3>CADASTRAR NOVO CHEFE</h3>
+<br>
+<PageChefia Chefia="chefia" ButtonText="Adicionar" OnValidSubmit="@Criar"></PageChefia>
+
+
+@code {
+    private Chefia chefia = new Chefia();
+    async Task Criar()
+    {
+        await http.PostAsJsonAsync("api/chefias", chefia);
+        navigation.NavigateTo("chefias");
+    }
+    //private async Task Criar()
+    //{
+    //    Console.WriteLine("Create method");
+    //    Console.WriteLine(curso.NomeCurso);
+
+    //    try
+    //    {
+    //        await cursoRepository.CreateCurso(curso);
+    //        navigation.NavigateTo("cursos");
+    //    }
+    //    catch (Exception ex)
+    //    {
+    //        // ...
+    //        Console.WriteLine(ex.Message);
+    //    }
+    //}
+}

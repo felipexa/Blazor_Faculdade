@@ -1,0 +1,121 @@
+﻿@page "/financeiro"
+@inject HttpClient http
+@if (financeiros == null)
+{
+    <text>Carregando!!!</text> }
+else if (financeiros.Count == 0)
+{
+
+<div>
+    <a href="financeiros/criar" value="Criar">
+        <button class="btn-criar roboto rounded-pill border-0 my-5">Criar</button>
+    </a>
+</div>
+     }
+else
+    {
+
+<div>
+    <a href="financeiros/criar" value="Criar">
+        <button class="btn-criar roboto rounded-pill border-0 my-5">Criar</button>
+    </a>
+</div>
+
+<table class="table roboto text-uppercase font-tabela">
+    <thead>
+        <tr>
+            <th>Entrada</th>
+            <th>Saida</th>
+        </tr>
+    </thead>
+    <tbody class="table roboto text-uppercase font-tabela">
+        @foreach (var financeiros in financeiros)
+        {
+            <tr>
+
+                <td>@financeiros.Entrada</td>
+                <td>@financeiros.Saida</td>
+                <td>
+                    <a class="button-geral" href="financeiros/edit/@financeiros.FinanceiroId">Editar</a>
+                
+                    <a class="button-geral" href="financeiros/details/@financeiros.FinanceiroId">Detalhes</a>
+                
+                    <a  style="cursor:pointer" class="button-geral" btn btn-danger @onclick="@(() => ExcluirFinanceiro(financeiros.FinanceiroId))"> Delete </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+}
+@code {public List<Financeiro> financeiros;
+protected override async Task OnInitializedAsync()
+{
+    await LoadFinanceiro();
+}
+async Task LoadFinanceiro()
+{
+    financeiros = await http.GetFromJsonAsync<List<Financeiro>>("api/financeiros");
+}
+async Task ExcluirFinanceiro(int id)
+{
+    await http.DeleteAsync($"api/financeiros/{id}");
+    await LoadFinanceiro();
+}@*private List<Aluno> alunos = new List<Aluno>();
+    private List<Funcionario> funcionarios = new List<Funcionario>();
+    protected override async Task OnInitializedAsync()
+    {
+        await Download();
+    }
+    async Task Download()
+    {
+        alunos = await http.GetFromJsonAsync<List<Aluno>>("api/alunos");
+        funcionarios = await http.GetFromJsonAsync<List<Funcionario>>("api/funcionarios");
+    }*@ @*<h3>Index</h3>
+    <button class="mb-3 btn-abrir roboto rounded-pill border-0 px-5 py-3 my-5 w-75 " asp-controller="Financeiros" asp-action="Download">ABRIR</button>*@ @*@if (alunos == null)
+        {
+        <text>Carregando!!!</text> }
+        else if (alunos.Count == 0)
+        {
+        <text>Ninguem cadastradoM</text> }
+        else
+        {
+
+        <table class="table">
+            <thead>
+                <tr>
+
+                    <th>Entrada</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var aluno in alunos)
+                {
+        <tr>
+
+            <td>@aluno.Nome</td>
+
+        </tr>}
+            </tbody>
+            <tbody>
+                <tr>
+
+                    <th>Saida</th>
+
+
+                </tr>
+                @foreach (var funcionario in funcionarios)
+                {
+            <tr>
+
+                <td>@funcionario.SalarioFuncionario</td>
+
+            </tr>
+        }
+            </tbody>
+        </table>}*@
+
+
+
+
+}

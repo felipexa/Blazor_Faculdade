@@ -1,0 +1,82 @@
+﻿@page "/Funcionarios"
+@using Faculdade_FUP_Project.Server.Models
+@inject HttpClient http
+
+@if (funcionarios == null)
+{
+    <text>Carregando!!!</text>
+}
+else if (funcionarios.Count == 0)
+{
+
+    <h3>Funcionarios cadastrados - 0  </h3>
+    <div>
+        <a href="funcionarios/criar" value="Criar">
+            <button class="btn-criar roboto rounded-pill border-0 my-5">Criar</button>
+        </a>
+    </div>
+}
+else
+{
+    <div>
+        <a href="funcionarios/criar" value="Criar">
+            <button class="btn-criar roboto rounded-pill border-0 my-5">Criar</button>
+        </a>
+    </div>
+
+
+    <table class="table roboto text-uppercase font-tabela">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Data Nascimento</th>
+                <th>Data Contratação</th>
+                <th>Genero</th>
+                <th>Salario</th>
+                <th>Nome Chefe</th>
+
+            </tr>
+        </thead>
+        <tbody class="table roboto text-uppercase font-tabela">
+            @foreach (var funcionario in funcionarios)
+            {
+                <tr class="table roboto text-uppercase font-tabela">
+                    <td>@funcionario.NomeFuncionario</td>
+                    <td>@funcionario.Datanascimento</td>
+                    <td>@funcionario.DataContratacao</td>
+                    <td>@funcionario.Genero</td>
+                    <td>@funcionario.SalarioFuncionario</td>
+                    <td>@funcionario.NomeChefe</td>
+
+                    <td>
+                        <a class="btn-index" href="funcionarios/edit/@funcionario.FuncionarioId">Editar</a>
+                    
+                        <a class="btn-index" href="funcionarios/details/@funcionario.FuncionarioId">Detalhes</a>
+                   
+                        <a class="btn-index" style="cursor:pointer" @onclick="@(() => ExcluirFuncionario(funcionario.FuncionarioId))"> Delete </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+}
+
+
+
+@code {
+    public List<Funcionario> funcionarios;
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadFuncionarios();
+    }
+    async Task LoadFuncionarios()
+    {
+        funcionarios = await http.GetFromJsonAsync<List<Funcionario>>("api/funcionarios");
+    }
+    async Task ExcluirFuncionario(int id)
+    {
+        await http.DeleteAsync($"api/funcionarios/{id}");
+        await LoadFuncionarios();
+    }
+}

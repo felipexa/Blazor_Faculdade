@@ -1,0 +1,17 @@
+﻿@page "/financeiros/criar"
+@inject HttpClient http
+@inject NavigationManager navigation
+
+<h3>CADASTRAR NOVO CURSO</h3>
+<br>
+<FormFinanceiro financeiro="financeiro" ButtonText="Adicionar" OnValidSubmit="@Criar"></FormFinanceiro>
+
+
+@code { 
+    private Financeiro financeiro = new Financeiro();
+            async Task Criar()
+            {
+                await http.PostAsJsonAsync("api/financeiros", financeiro);
+                navigation.NavigateTo("financeiro");
+            } 
+    }

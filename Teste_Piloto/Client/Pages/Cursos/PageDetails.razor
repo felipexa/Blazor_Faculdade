@@ -1,0 +1,54 @@
+﻿
+@*<EditForm Model="@Curso" OnInvalidSubmit="@OnValidSubmit">
+    <div class="form-group">
+        <h3> <strong>Nome do Curso: </strong> @Curso.NomeCurso </h3>
+    </div>
+    <div class="form-group">
+        <h3> <strong> Professor: </strong> @Curso.ProfessorCurso </h3>
+    </div>
+    <div class="form-group">
+        <h3> <strong> Valor do Curso: </strong> @Curso.ValorCurso </h3>
+    </div>
+    <button type="submit" class="btn btn-primary" @onclick="OnValidSubmit">@ButtonText</button>
+
+</EditForm>*@
+
+<EditForm Model="@Curso" OnInvalidSubmit="@OnValidSubmit">
+
+    <div class="py-5"></div>
+    <img class="position-absolute mt-5 pt-3 ficha " src="../img/ficha.png" />
+    <div class="container back-detalhes pt-5 pb-3 ">
+        <div class="row  p-6">
+            <div class="pb-5 text-center">
+
+            </div>
+            
+            <div class="col-md-12 py-3">
+                <h2>CURSO - <strong>@Curso.NomeCurso</strong></h2>
+            </div>
+
+            <div class="col-md-12 py-3">
+                <h2 class="text-uppercase">
+                    PROFESSOR - <strong>@Curso.ProfessorCurso</strong>
+                </h2>
+            </div>
+            <div class="col-md-12 py-3">
+                <h2 class="text-uppercase">
+                    VALOR - <strong>@Curso.ValorCurso</strong>
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div class="pb-3 text-center">
+        <button @onclick="OnValidSubmit" class="mb-3 btn-abrir roboto rounded-pill border-0 px-5 py-3 my-5 w-50 ">VOLTAR</button>
+    </div>
+
+</EditForm>
+
+
+@code
+{
+    [Parameter] public Curso Curso { get; set; }
+    [Parameter] public string ButtonText { get; set; }
+    [Parameter] public EventCallback OnValidSubmit { get; set; }
+}

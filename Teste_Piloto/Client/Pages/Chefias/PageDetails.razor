@@ -1,0 +1,59 @@
+﻿@*<EditForm Model="@Chefia" OnInvalidSubmit="@OnValidSubmit">
+    <div class="form-group">
+        <h3> <strong>Nome: </strong>  </h3>
+    </div>
+    <div class="form-group">
+        <h3> <strong> Setor: </strong> @Chefia.Setor </h3>
+    </div>
+    <div class="form-group">
+        <h3> <strong> Email: </strong> @Chefia.Email </h3>
+    </div>
+    <div class="form-group">
+        <h3> <strong> Telefone: </strong> @Chefia.Telefone </h3>
+    </div>
+
+    <button type="submit" class="btn btn-primary" @onclick="OnValidSubmit">@ButtonText</button>
+
+</EditForm>*@
+
+<EditForm Model="@Chefia" OnInvalidSubmit="@OnValidSubmit">
+
+    <div class="py-5"></div>
+    <img class="position-absolute mt-5 pt-3 ficha " src="../img/ficha.png" />
+    <div class="container back-detalhes pt-5 pb-3 ">
+        <div class="row  p-6">
+            <div class="pb-5 text-center">
+
+            </div>
+            <div class="col-md-12 text-left">
+                <h2 class="text-uppercase">NOME COMPLETO - <strong>@Chefia.NomeChefia</strong></h2>
+            </div>
+            <div class="col-md-12 py-3">
+                <h2>SETOR - <strong>@Chefia.Setor</strong></h2>
+            </div>
+            
+            <div class="col-md-12 py-3">
+                <h2 class="text-uppercase">
+                    EMAIL - <strong>@Chefia.Email</strong>
+                </h2>
+            </div>
+            <div class="col-md-12 py-3">
+                <h2 class="text-uppercase">
+                    TELEFONE - <strong>@Chefia.Telefone</strong>
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div class="pb-3 text-center">
+        <button @onclick="OnValidSubmit" class="mb-3 btn-abrir roboto rounded-pill border-0 px-5 py-3 my-5 w-50 ">VOLTAR</button>
+    </div>
+
+</EditForm>
+
+
+@code
+{
+    [Parameter] public Chefia Chefia { get; set; }
+    [Parameter] public string ButtonText { get; set; }
+    [Parameter] public EventCallback OnValidSubmit { get; set; }
+}

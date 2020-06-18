@@ -1,0 +1,37 @@
+﻿<br>
+<EditForm Model="@Chefia" OnValidSubmit="@OnValidSubmit">
+    <DataAnnotationsValidator />
+    <div class="row">
+        <div class="form-group col-md-6 roboto">
+            <label>Nome</label>
+            <InputText @bind-Value="@Chefia.NomeChefia" class="form-control"></InputText>
+            <ValidationMessage For="@(() =>Chefia.NomeChefia)"></ValidationMessage>
+        </div>
+        <div class="form-group col-md-6 roboto">
+            <label>Setor</label>
+            <InputText @bind-Value="@Chefia.Setor" class="form-control"></InputText>
+            <ValidationMessage For="@(() =>Chefia.Setor)"></ValidationMessage>
+        </div>
+        <div class="form-group col-md-6 roboto">
+            <label>Email</label>
+            <InputText @bind-Value="@Chefia.Email" class="form-control"></InputText>
+            <ValidationMessage For="@(() =>Chefia.Email)"></ValidationMessage>
+        </div>
+        <div class="form-group col-md-6 roboto">
+            <label>Telefone</label>
+            <InputText @bind-Value="@Chefia.Telefone" class="form-control"></InputText>
+            <ValidationMessage For="@(() =>Chefia.Telefone)"></ValidationMessage>
+        </div>
+        <div class="col-md-12 text-center">
+            <button type="submit" class="btn-add w-50 rounded-pill">@ButtonText</button>
+        </div>
+    </div>
+</EditForm>
+
+
+@code
+{
+    [Parameter] public Chefia Chefia { get; set; }
+    [Parameter] public string ButtonText { get; set; }
+    [Parameter] public EventCallback OnValidSubmit { get; set; }
+}

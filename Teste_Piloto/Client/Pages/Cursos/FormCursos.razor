@@ -1,0 +1,34 @@
+﻿<br>
+<EditForm Model="@Curso" OnValidSubmit="@OnValidSubmit">
+    <DataAnnotationsValidator />
+    <div class="row">
+        <div class="form-group col-md-12">
+            <label>Nome</label>
+            <InputText @bind-Value="@Curso.NomeCurso" class="form-control"></InputText>
+            <ValidationMessage For="@(() =>Curso.NomeCurso)"></ValidationMessage>
+        </div>
+        <div class="form-group col-md-6">
+            <label>Professor</label>
+            <InputText @bind-Value="@Curso.ProfessorCurso" class="form-control"></InputText>
+            <ValidationMessage For="@(() =>Curso.ProfessorCurso)"></ValidationMessage>
+        </div>
+        <div class="form-group col-md-6">
+            <label>Valor</label>
+            <InputNumber @bind-Value="@Curso.ValorCurso" class="form-control" style="cursor:pointer;"></InputNumber>
+            <ValidationMessage For="@(() =>Curso.ValorCurso)"></ValidationMessage>
+        </div>
+    </div>
+    <div class="col-md-12 text-center">
+        <button type="submit" class="btn-add w-50 rounded-pill">@ButtonText</button>
+
+    </div>
+
+</EditForm>
+
+
+@code
+{
+    [Parameter] public Curso Curso { get; set; }
+    [Parameter] public string ButtonText { get; set; }
+    [Parameter] public EventCallback OnValidSubmit { get; set; }
+}

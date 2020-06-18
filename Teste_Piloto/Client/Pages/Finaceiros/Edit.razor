@@ -1,0 +1,21 @@
+﻿@page "/financeiros/edit/{id:int}"
+@inject HttpClient http
+@inject NavigationManager navigation
+
+<h3>Editar</h3>
+<FormFinanceiro financeiro="financeiro" ButtonText="Atualizar" OnValidSubmit="@EditarFinanceiro"></FormFinanceiro>
+
+
+@code {
+    private Financeiro financeiro = new Financeiro();
+            [Parameter] public int id { get; set; }
+            protected override async Task OnParametersSetAsync() // é chamado qd o roteamento passar o valor para a propriedade
+            {
+                financeiro = await http.GetFromJsonAsync<Financeiro>($"api/financeiros/{id}");
+            }
+
+            async Task EditarFinanceiro()
+            {
+                await http.PutAsJsonAsync("api/financeiros", financeiro);
+                navigation.NavigateTo("financeiro");
+            } }

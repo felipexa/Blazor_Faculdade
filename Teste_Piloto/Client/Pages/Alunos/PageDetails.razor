@@ -1,0 +1,69 @@
+﻿
+    <EditForm Model="@Aluno" OnInvalidSubmit="@OnValidSubmit">
+
+        <div class="py-5"></div>
+        <img class="position-absolute mt-5 pt-3 ficha " src="../img/ficha.png" />
+        <div class="container back-detalhes pt-5 pb-3 ">
+            <div class="row  p-6">
+                <div class="pb-5 text-center">
+
+                </div>
+                <div class="col-md-12 text-left">
+                    <h2 class="text-uppercase">NOME COMPLETO - <strong>@Aluno.Nome</strong></h2>
+                </div>
+                <div class="col-md-12 py-3">
+                    <h2>RG - <strong>@Aluno.Rg</strong></h2>
+                </div>
+                <div class="col-md-12 ">
+                    <h2>CPF - <strong>@Aluno.Cpf</strong></h2>
+                </div>
+                <div class="col-md-12 py-3">
+                    <h2 class="text-uppercase">
+                        DATA DE NASCIMENTO - <strong>@Aluno.Datanascimento</strong>
+                    </h2>
+                </div>
+                <div class="col-md-12">
+                    <h2 class="text-uppercase">
+                        INICIO CURSO - <strong>@Aluno.DataInicioCurso</strong>
+                    </h2>
+                </div>
+                <div class="col-md-12 py-3">
+                    <h2 class="text-uppercase">
+                        TERMINO CURSO - <strong>@Aluno.DataTerminoCurso</strong>
+                    </h2>
+                </div>
+                <div class="col-md-12">
+                    <h2 class="text-uppercase">
+                        GÊNERO - <strong>@Aluno.Genero</strong>
+                    </h2>
+                </div>
+                <div class="col-md-12 py-3">
+                    <h2 class="text-uppercase">
+                        EMAIL - <strong>@Aluno.Email</strong>
+                    </h2>
+                </div>
+                <div class="col-md-12 py-3">
+                    <h2 class="text-uppercase">
+                        TELEFONE - <strong>@Aluno.Telefone</strong>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="pb-3 text-center">
+            <button @onclick="OnValidSubmit" class="mb-3 btn-abrir roboto rounded-pill border-0 px-5 py-3 my-5 w-50 ">VOLTAR</button>
+        </div>
+
+    </EditForm>
+
+
+
+
+
+
+
+@code
+{
+    [Parameter] public Aluno Aluno { get; set; }
+    [Parameter] public string ButtonText { get; set; }
+    [Parameter] public EventCallback OnValidSubmit { get; set; }
+}
